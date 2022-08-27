@@ -1,0 +1,10 @@
+#AddRoom
+{
+    color: blue;
+    border-color: red;
+}
+#logout
+{
+    color: aqua;
+    position: fixed;
+}

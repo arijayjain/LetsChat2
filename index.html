@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chat App</title>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyAVSo1DAYzBwtTxJz3eaSviPQbKTbxBZA0",
+		  authDomain: "let-chat-c885f.firebaseapp.com",
+		  projectId: "let-chat-c885f",
+		  storageBucket: "let-chat-c885f.appspot.com",
+		  messagingSenderId: "911834931477",
+		  appId: "1:911834931477:web:87aaa37b5930b92aa3c91c",
+		  measurementId: "G-NDF8HPK94J"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+
+<!-- 
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="chat.js"></script>
+	
+-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="chat.js"></script>
+</head>
+
+<body>
+	<center>
+		<h1 class="header">
+			Chat App <sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<img src="logo.png" class="logo">
+			<h3>See what is happening in the world right now</h3>
+			<h4>Join The Chat App today</h4>
+			<div class="form-group">
+				<label>User Name:</label>
+            <!-- 
+				<input type="text" id="user_name" class="form-control" placeholder="User Name">
+			-->	
+			<input type="text" id="user_name" class="form-control" placeholder="User Name">
+
+			</div>
+		<!-- 	
+			<button id="login_button" class="btn btn-primary" onclick="addUser();">Log in</button>
+		-->
+		<button id="login_button" class="btn btn-primary" onclick="addUser();">Log in</button>
+
+			<br><br>
+		</div>
+	</center>
+</body>
+
+</html>
